@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DEMO</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-									Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body>
+	<% if(error && error.length > 0){ %>
+		<div class="container">
+			<div class="alert alert-danger"><%= error %></div>	
+		</div>
+	<% }else if(success && success.length > 0){ %>
+		<div class="container">
+			<div class="alert alert-success"><%= success %></div>	
+		</div>	
+	<% } %>
