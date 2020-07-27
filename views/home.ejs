@@ -1,0 +1,19 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="container my-2 my-md-5">
+	<div class="row">
+		<div class="col-md-4 d-none d-md-block"></div>
+		<div class="col-md-4">
+			<button class="btn btn-success btn-lg">Greeen Button Access</button>
+			<br><br>
+			<% if(User.role === "Admin"){ %>
+				<button class="btn btn-danger btn-lg">Red Button Access</button>
+				<br><br>
+			<% } %>
+			<a href="/">Go To Start</a>
+			<a class="btn btn-secondary btn-default" href="/signout">Sign Out</a>
+		</div>
+	</div>
+</div>
+
+<%- include("./partials/footer.ejs") %>
