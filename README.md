@@ -1,1 +1,1 @@
-# QuotesNStories
+This is a simple login system having two types of users Admin and Customer. Admin has an extra permission. The project is made using node.js , and express in back-end and mongodb as the database. The program starts with the app.js file. 
